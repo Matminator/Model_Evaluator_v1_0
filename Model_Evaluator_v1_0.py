@@ -71,7 +71,7 @@ print(' Done!')
 
 print('Loading and extracting test data:', end = '')
 test_data = Trajectory(path_test_dataset) # Loading ASE Trajectory file
-test_data = test_data[-1000:]
+test_data = test_data[-1000:] # Takes last 1000 data points of data set
 extracted_test_data = extract_all_data(test_data)
 print(' Done!')
 
