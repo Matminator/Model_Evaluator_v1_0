@@ -27,6 +27,7 @@ from Model_Evaluator_auxiliary import extract_all_data
 # Path and test data file name (ASE Trajectory file):
 path_test_dataset = "/home/niflheim/s173973/treeweek/test1/updated_ts.traj"
 
+# Path to all models which should be evaluated
 paths_models = ["/home/niflheim/s173973/treeweek/P-r3.pth",
                 "/home/niflheim/s173973/treeweek/P-r4.pth",
                 "/home/niflheim/s173973/treeweek/P-r5.pth",
@@ -34,14 +35,17 @@ paths_models = ["/home/niflheim/s173973/treeweek/P-r3.pth",
                 "/home/niflheim/s173973/treeweek/P-r6-5.pth",
                 "/home/niflheim/s173973/treeweek/P-r8.pth"]
 
+# Atoms in the ordered list as used for NequIP and Allegro:
 model_atomic_species = {
                         "Au": "Au",
                         "Ti": "Ti",
                         "O": "O"
                         }
 
+# Name of the folder which will be created for the output files:
 output_folder = r'Evaluated_Models'
 
+# List of model names (optional, if None: no names will be given to models)
 model_names = None
 
 # ***************************************************
